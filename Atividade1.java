@@ -36,5 +36,7 @@ public class Atividade1 {
 		Collections.sort(listaCores);
 		System.out.println("\nOrdenar as cores:" );
 		System.out.println(listaCores);
+		
+		ler.close();
 	}
 }

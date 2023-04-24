@@ -45,5 +45,7 @@ public class Atividade4 {
 		}else {
 			System.out.println("O número " + n + " não foi encontrado!");
 		}
+		
+		ler.close();
 	}
 }

@@ -43,5 +43,7 @@ public class Atividade2 {
 		} else {
 			System.out.printf("\nO nº digitado %d não foi encontrado!", num);
 		}
+		
+		ler.close();
 	}
 }

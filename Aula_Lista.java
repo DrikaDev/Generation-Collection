@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Atividade_Lista {
+public class Aula_Lista {
 
 	public static void main(String[] args) {
 		

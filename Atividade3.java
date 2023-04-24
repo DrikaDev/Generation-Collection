@@ -23,13 +23,15 @@ public class Atividade3 {
 		System.out.println("Digite 10 valores inteiros.");
 		
 		for (int i = 0; i < 10; i++) {
-			System.out.printf("\nDigite o %dº número: ", (i+1), num);
+			System.out.printf("Digite o %dº número: ", (i+1), num);
 			num = leia.nextInt();
 			valoresInteiros.add(num);
 		}
 		
 		Iterator<Integer> resultado = valoresInteiros.iterator();
 				
-		System.out.println("\nListar dados digitados: " + valoresInteiros);			
+		System.out.println("\nListar números digitados sem repetir: " + valoresInteiros);	
+		
+		leia.close();
 	}
 }
