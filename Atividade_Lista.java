@@ -2,17 +2,14 @@ package Collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 public class Atividade_Lista {
 
 	public static void main(String[] args) {
 		
 		//criando uma lista do tipo array com um objeto wrapper do tipo Integer:		
-		ArrayList<Integer> minhaLista = new ArrayList<>();
+		List<Integer> minhaLista = new ArrayList<>();
 		
 		//adicionando elementos para dentro do meu ArrayList:
 		minhaLista.add(2);
@@ -20,10 +17,12 @@ public class Atividade_Lista {
 		minhaLista.add(5);
 		minhaLista.add(3);
 		minhaLista.add(7);
+		minhaLista.add(5);
 		minhaLista.add(8);
+		minhaLista.add(1);
 		
 		System.out.println("Mostrando os elementos da lista:");
-		//for (wrapper nomedavariavel:nomedaLista)
+		//for "each" (tipodedados nomedavariavel:nomedaLista)
 		for (Integer listaElementos:minhaLista) {
 			System.out.println(listaElementos);
 		}
@@ -36,34 +35,18 @@ public class Atividade_Lista {
 		}
 		
 		int primeiroElemento = minhaLista.get(0);
-		System.out.println("\nMostrando agora o elemento zero da lista: " + primeiroElemento + "\n");
+		System.out.println("\nMostrando agora o 1º elemento da lista: " + primeiroElemento);
 
+		
+		System.out.println("\nMostrando os elementos atualizados:");
 		for(int i= 0; i< minhaLista.size(); i++) {
-			System.out.println("Elemento: " + minhaLista.get(i));
+			System.out.println(minhaLista.get(i));
 		}
 		
-		Collections.sort(minhaLista);
-		System.out.println("Lista ordenada:");
-		System.out.println(minhaLista);
-		System.out.println();
+		System.out.println("\n =============== ");
 		
-		//=====================================
-		
-		Set<Integer> meuSet = new HashSet<Integer>();
-		meuSet.add(8);
-		meuSet.add(5);
-		meuSet.add(3);
-		meuSet.add(1);
-		meuSet.add(3);
-		meuSet.add(9);
-		
-		Iterator<Integer> iMeuSet = meuSet.iterator();
-		
-		
-		while(iMeuSet.hasNext()) {
-			System.out.println("Ordenando:" + iMeuSet.next());
-			
-		}
+		//sort para colocar em ordem crescente:
+		Collections.sort(minhaLista);		
+		System.out.println("\nSort para ordenar a lista:" + minhaLista);
 	}
-
 }
